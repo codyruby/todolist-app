@@ -1,8 +1,13 @@
 $(document).ready(function() {
     // Mets ici ton code
-    var $titleCard = $(".category-title");
-    $titleCard.click(function(){
-        $('.category-content').fadeToggle("slow"); 
+  
+      $('.category-title').on('click',() => {
+        $('.category-content').slideToggle('slow');
+      });
+
+      var $avatar = $(".avatar");
+      $avatar.click(function(){
+          $('.dropdown-content').toggle("fast");
       });
     });
 
