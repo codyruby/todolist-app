@@ -9,6 +9,10 @@ $(document).ready(function() {
       $avatar.click(function(){
           $('.dropdown-content').toggle("fast");
       });
+
+        $('.dropdown-item1').on('click',() => {
+            $('#modal-form').slideToggle('slow');
     });
+});
 
    
