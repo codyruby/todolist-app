@@ -10,9 +10,27 @@ $(document).ready(function() {
           $('.dropdown-content').toggle("fast");
       });
 
-        $('.dropdown-item1').on('click',() => {
-            $('#modal-form').slideToggle('slow');
-    });
+      $('.dropdown-item1').on('click',() => {
+          $('#modal-form1').slideToggle('slow');
+      });
+
+      $('.dropdown-item2').on('click',() => {
+          $('#modal-form2').slideToggle('slow');
+      });
+
+      $('.cancelbtn1').on('click',() => {
+        $('#modal-form1').slideToggle('slow');
+      });
+
+      $('.cancelbtn2').on('click',() => {
+        $('#modal-form2').slideToggle('slow');
+      });
+
+
+      $( "body" ).click(function( event ) {
+        event.stopPropagation();
+        // Do something
+      });
 });
 
    
