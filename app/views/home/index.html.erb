@@ -14,6 +14,7 @@
               <% unless task.deadline.nil? %>
                 , to read: <%= task.deadline.strftime('%D')  %>
               <% end %>
+              <%= link_to '', task_path(task.id), method: :delete, data: { confirm: 'Are you sure?' }, class:"far fa-trash-alt" %>
             </li>
           </div>
         <% end %>
