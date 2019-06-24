@@ -15,6 +15,10 @@ before_action :authenticate_user!
       redirect_to root_path
       flash[:notice] = "Please try again"
     end
+
+    respond_to do |format|
+      format.html { redirect_to root_path }
+      format.js { }
   end
 
   def edit
