@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Mets ici ton code
   
-      $('.category-title').on('click',() => {
+      $('.category-show').on('click',() => {
         $('.category-content').slideToggle('slow');
       });
 
